@@ -1,0 +1,105 @@
+body{
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25;
+  }
+  .logo-text, .nav-link1{
+    color: black;
+    padding-top: 25px;
+      font-size:25px;
+    font-weight: bold;
+    text-align: center;
+  }
+  table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin:auto;
+    padding: 2px;
+    width:70%;
+    table-layout:auto;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  table tr {
+    padding: .35em;
+  }
+  table th,table td {
+    padding: .625em;
+    text-align: center;
+  }
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  .button {
+    background-color: royalblue;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    border-radius: 10px;
+  }
+  .button1{
+    background-color: royalblue;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    border-radius: 20px;    
+  }
+  .button:hover, .button1:hover{
+    background-color: navy;
+    color: whitesmoke;
+  }
+  .button:active, .button1:active{
+    background-color: #02c39a;
+  }
+  @media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+  table caption {
+    font-size: 1.3em;
+  }  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }  
+  table td:last-child {
+    border-bottom: 0;
+  }
+  }
